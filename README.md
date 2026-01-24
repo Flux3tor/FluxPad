@@ -101,15 +101,7 @@ It consists of:
 - Top plate
 - Heatset insert mounts
 
-Exported as a single STEP file in the `CAD/` folder.
-
----
-
-## Future Upgrades
-- RGB underglow support
-- Multiple firmware layers
-- Macro recording mode
-- Animated OLED UI
+Exported as a three STEP files in the `CAD/` folder.
 
 ---
 
