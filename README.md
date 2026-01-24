@@ -75,7 +75,6 @@ It features a rotary encoder for volume and scrolling, an OLED status display, a
 | Seeed XIAO RP2040 (TH) | 1 | Seeed Studio | 102010428 |
 | MX Mechanical Switch | 12 | Gateron / Kailh | MX-Style |
 | 1N4148 Diodes (TH) | 12 | Vishay | 1N4148 |
-| SK6812 MINI-E RGB LED | 0 | — | — |
 | EC11 Rotary Encoder | 1 | ALPS / Generic | EC11 |
 | 0.91" OLED Display | 1 | Generic | SSD1306 |
 | DSA Keycaps | 12 | Generic | DSA Blank |
