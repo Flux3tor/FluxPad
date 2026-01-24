@@ -10,10 +10,8 @@ This project was created as part of Hack Club’s Blueprint program and includes
 
 - 12 MX-style mechanical keys (4×3 layout)
 - Seeed XIAO RP2040 microcontroller
-- Rotary encoder with push button (volume + mute)
+- Rotary encoder (volume)
 - 0.91" OLED display (I²C)
-- 12 SK6812 Mini-E RGB LEDs (per-key lighting)
-- Direct-wired keys (no matrix, no diodes)
 - KMK firmware (CircuitPython)
 - Custom 3D-printed case with heatset inserts
 
@@ -28,10 +26,9 @@ This project was created as part of Hack Club’s Blueprint program and includes
 
 ### Input Devices
 - 12 × MX-style switches
-- 1 × EC11 rotary encoder (with press)
+- 1 × EC11 rotary encoder
 
 ### Output Devices
-- 12 × SK6812 Mini-E RGB LEDs
 - 1 × 0.91" OLED display (I²C)
 
 ### Power
@@ -70,9 +67,8 @@ FluxPad uses a 3-layer setup:
 ### Layer 2 – Media
 - Play/Pause, Next, Previous
 - Brightness control
-- RGB mode toggles
 
-The rotary encoder controls system volume, with press-to-mute.
+The rotary encoder controls system volume.
 
 ---
 
@@ -87,17 +83,3 @@ The OLED displays:
 The display is intentionally kept minimal for clarity and performance.
 
 ---
-
-## RGB Behavior
-
-- Per-key RGB lighting
-- Color-coded layers:
-  - Base: White / Blue
-  - Dev: Green
-  - Media: Purple
-- Static lighting with subtle transitions
-
----
-
-## Repository Structure
-
