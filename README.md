@@ -101,7 +101,7 @@ It consists of:
 - Top plate
 - Heatset insert mounts
 
-Exported as a three STEP files in the `CAD/` folder.
+Exported as three STEP files in the `CAD/` folder.
 
 ---
 
