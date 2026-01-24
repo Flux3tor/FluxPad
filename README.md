@@ -19,20 +19,20 @@ It features a rotary encoder for volume and scrolling, an OLED status display, a
 ## Project Images
 
 ### Schematic
-![Schematic](images/schematic.png)
+![Schematic](Images/schematic.png)
 
 ### PCB
-![PCB](images/pcb.png)
+![PCB](Images/pcb.png)
 
 ### Case Design
 #### Bottom Case
-![case_bottom](images/case_bottom.png)
+![case_bottom](Images/case_bottom.png)
 
 #### Top Case
-![case_top](images/case_top.png)
+![case_top](Images/case_top.png)
 
 ### Final Layout
-![Final](images/case_assembled.png)
+![Final](Images/case_assembled.png)
 
 ---
 
