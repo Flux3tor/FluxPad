@@ -1,85 +1,119 @@
 # FluxPad
 
-FluxPad is a custom-built 12-key macropad designed for productivity, development workflows, and media control. It is built around the Seeed XIAO RP2040 and features per-key RGB lighting, a rotary encoder, and an OLED status display.
-
-This project was created as part of Hack Club’s Blueprint program and includes a custom PCB, firmware, and a 3D-printed case.
+FluxPad is a custom 12-key macropad powered by the Seeed XIAO RP2040.  
+It features a rotary encoder for volume and scrolling, an OLED status display, and a compact 3D-printed case designed for daily productivity and creative workflows.
 
 ---
 
 ## Features
-
-- 12 MX-style mechanical keys (4×3 layout)
+- 12 MX mechanical keys
+- Rotary encoder (volume + scroll control)
+- 0.91" OLED display (layer & status display)
 - Seeed XIAO RP2040 microcontroller
-- Rotary encoder (volume)
-- 0.91" OLED display (I²C)
-- KMK firmware (CircuitPython)
-- Custom 3D-printed case with heatset inserts
+- KMK firmware (CircuitPython-based)
+- Fully custom 2-layer PCB
+- 3D-printed case
 
 ---
 
-## Hardware Overview
+## Project Images
 
-### Microcontroller
-- **Seeed XIAO RP2040**
-- USB-C interface
-- RP2040 dual-core MCU
+### Schematic
+![Schematic](images/schematic.png)
 
-### Input Devices
-- 12 × MX-style switches
-- 1 × EC11 rotary encoder
+### PCB
+![PCB](images/pcb.png)
 
-### Output Devices
-- 1 × 0.91" OLED display (I²C)
+### Case Design
+#### Bottom Case
+![case_bottom](images/case_bottom.png)
 
-### Power
-- Powered via USB through the XIAO RP2040
+#### Top Case
+![case_top](images/case_top.png)
+
+### Final Layout
+![Final](images/case_assembled.png)
+
+---
+
+## System Overview
+
+### MCU
+- Seeed Studio XIAO RP2040 (Through-hole)
+
+### Inputs
+- 12x MX mechanical switches
+- 1x EC11 rotary encoder
+
+### Output
+- 0.91" OLED display (I2C)
+
+---
+
+## Pin Mapping
+
+| Function | GPIO |
+|----------|------|
+| ROW0 | GPIO26 |
+| ROW1 | GPIO27 |
+| ROW2 | GPIO28 |
+| COL0 | GPIO29 |
+| COL1 | GPIO0 |
+| COL2 | GPIO1 |
+| COL3 | GPIO2 |
+| Encoder A | GPIO4 |
+| Encoder B | GPIO3 |
+| OLED SDA | GPIO6 |
+| OLED SCL | GPIO7 |
+
+---
+
+## Bill of Materials (BOM)
+
+| Part | Quantity | Manufacturer | Part Number |
+|------|----------|--------------|-------------|
+| Seeed XIAO RP2040 (TH) | 1 | Seeed Studio | 102010428 |
+| MX Mechanical Switch | 12 | Gateron / Kailh | MX-Style |
+| 1N4148 Diodes (TH) | 12 | Vishay | 1N4148 |
+| SK6812 MINI-E RGB LED | 0 | — | — |
+| EC11 Rotary Encoder | 1 | ALPS / Generic | EC11 |
+| 0.91" OLED Display | 1 | Generic | SSD1306 |
+| DSA Keycaps | 12 | Generic | DSA Blank |
+| M3x16 Screws | 4 | Generic | M3 |
+| Heatset Inserts | 4 | Generic | M3 |
 
 ---
 
 ## Firmware
+FluxPad runs on KMK (CircuitPython-based firmware).  
+The firmware supports:
+- Key matrix scanning
+- Encoder volume & scroll control
+- OLED display support
 
-FluxPad uses **KMK**, a Python-based keyboard firmware built on CircuitPython.
-
-### Why KMK?
-- Faster iteration (no compiling)
-- Clean support for RP2040
-- Simple handling of direct-wired keys
-- Easy RGB, encoder, and OLED integration
-
-The main firmware logic lives in `main.py`.
+Source code is located in the `Firmware/` folder.
 
 ---
 
-## Key Layout
+## Case
+The case is fully 3D printed and designed in Fusion360.  
+It consists of:
+- Bottom shell
+- Top plate
+- Heatset insert mounts
 
-FluxPad uses a 3-layer setup:
-
-### Layer 0 – Base
-- Copy, Paste, Undo, Redo
-- Screenshot, Task View, Lock, File Explorer
-- Layer switching and utility keys
-
-### Layer 1 – Dev
-- Editor shortcuts
-- Terminal, browser, build/run
-- Escape and tab access
-
-### Layer 2 – Media
-- Play/Pause, Next, Previous
-- Brightness control
-
-The rotary encoder controls system volume.
+Exported as a single STEP file in the `CAD/` folder.
 
 ---
 
-## OLED Display
-
-The OLED displays:
-- Device name
-- Active layer
-- Encoder mode
-- Optional key feedback
-
-The display is intentionally kept minimal for clarity and performance.
+## Future Upgrades
+- RGB underglow support
+- Multiple firmware layers
+- Macro recording mode
+- Animated OLED UI
 
 ---
+
+## Author
+Designed and built by **Flux3tor**  
+Hack Club Hackpad Project
