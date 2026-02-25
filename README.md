@@ -10,7 +10,7 @@ It features a rotary encoder for volume and scrolling, an OLED status display, a
 - Rotary encoder (volume + scroll control)
 - 0.91" OLED display (layer & status display)
 - Seeed XIAO RP2040 microcontroller
-- KMK firmware (CircuitPython-based)
+- QMK firmware
 - Fully custom 2-layer PCB
 - 3D-printed case
 
@@ -84,10 +84,9 @@ It features a rotary encoder for volume and scrolling, an OLED status display, a
 ---
 
 ## Firmware
-FluxPad runs on KMK (CircuitPython-based firmware).  
+FluxPad runs on QMK.  
 The firmware supports:
 - Key matrix scanning
-- Encoder volume & scroll control
 - OLED display support
 
 Source code is located in the `Firmware/` folder.

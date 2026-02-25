@@ -1,0 +1,42 @@
+{
+    "manufacturer": "Flux3tor",
+    "keyboard_name": "fluxpad",
+    "maintainer": "Flux3tor",
+
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+
+    "diode_direction": "ROW2COL",
+
+    "matrix_pins": {
+        "cols": ["GP29", "GP0", "GP1", "GP2"],
+        "rows": ["GP26", "GP27", "GP28"]
+    },
+
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0001",
+        "vid": "0xFEED"
+    },
+
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+                {"matrix": [0, 3], "x": 3, "y": 0},
+
+                {"matrix": [1, 0], "x": 0, "y": 1},
+                {"matrix": [1, 1], "x": 1, "y": 1},
+                {"matrix": [1, 2], "x": 2, "y": 1},
+                {"matrix": [1, 3], "x": 3, "y": 1},
+
+                {"matrix": [2, 0], "x": 0, "y": 2},
+                {"matrix": [2, 1], "x": 1, "y": 2},
+                {"matrix": [2, 2], "x": 2, "y": 2},
+                {"matrix": [2, 3], "x": 3, "y": 2}
+            ]
+        }
+    }
+}
