@@ -104,6 +104,46 @@ Exported as three STEP files in the `CAD/` folder.
 
 ---
 
+## Build Process
+
+This was my first time soldering, and I ran into a few issues along the way.
+
+While soldering the XIAO RP2040 headers, I accidentally bent the pins without realizing. Instead of redoing everything, I fixed it by using ribbon wires to connect the headers to the PCB. It doesn't look perfect, but it works reliably.
+
+Soldering the full PCB took around 5 hours.
+
+### Firmware Issues
+
+Initially, I used KMK firmware, but it kept crashing when I added OLED support. To debug, I tested the OLED separately using Arduino IDE and confirmed it was working.
+
+I then switched to QMK and rewrote the firmware from scratch, which took another ~5 hours. After that, everything worked properly, including the OLED and encoder.
+
+---
+
+## Final Build
+
+![Build1](Images/build1.jpg)  
+![Build2](Images/build2.jpg)
+
+---
+
+## Demo Video
+
+[Watch FluxPad Demo](https://drive.google.com/file/d/1hNpVQt3ci1zXDI4beTaH4Mk9EOGyLXIW/view?usp=drive_link)
+
+---
+
+## Result
+
+The final FluxPad works as intended:
+- All 12 keys function correctly  
+- Rotary encoder works for control  
+- OLED display works  
+
+It may not look perfect due to manual fixes, but it is fully functional and used daily.
+
+---
+
 ## Author
 Designed and built by **Flux3tor**  
 Hack Club Hackpad Project
